@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <br>
+    <input id="password" type="password"><span>show</span>
+    <p></p>
+    <script>
+        let inputText = document.querySelector('input');
+
+        inputText.addEventListener("keyup", function () {
+            if (inputText.value.includes(".")) {
+                inputText.style.border = "1px solid red";
+                inputText.style.color = "red";
+                document.querySelector("p").innerText = "there is an error here";
+                document.querySelector("p").style.color = "red";
+            } else {
+                inputText.style.borderColor = "black";
+                inputText.style.color = "black";
+                document.querySelector("p").innerText = "";
+                document.querySelector("p").style.color = "black";
+            }
+        });
+
+        let password = document.querySelector("#password");
+      
+        password.addEventListener("keyup", function(){
+            if(password.value.length < 5){
+                document.querySelector("p").innerText ="password is low";
+                document.querySelector("p").style.fontWeight = "bold";
+                document.querySelector("p").style.color = "red";
+            }else if(password.value.length < 10){
+                document.querySelector("p").innerText ="password is middle";
+                document.querySelector("p").style.fontWeight = "bold";
+                document.querySelector("p").style.color = "orange";
+            }else{
+                document.querySelector("p").innerText ="password is strong";
+                document.querySelector("p").style.fontWeight = "bold";
+                document.querySelector("p").style.color = "green";
+            }
+        })
+
+        let isHide = true;
+        document.querySelector("span").addEventListener("click", function(){
+            if(isHide){
+                password.setAttribute("type", "text");
+                document.querySelector("span").innerText = "hide";
+                isHide = false;
+            }else{
+                password.setAttribute("type", "password");
+                document.querySelector("span").innerText = "show";
+                isHide = true;
+            }
+        });
+    </script>
+</body>
+
+</html>

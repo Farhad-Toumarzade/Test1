@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a{
+        display: block;
+    }
+</style>
+<body>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://farhad.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://farhad.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://farhad.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://farhad.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+    <a href="http://test.com">link</a>
+
+    <script>
+        let myLink = document.querySelectorAll("a");
+        for( let i = 0; i < myLink.length - 1; i++){
+            if(myLink[i].getAttribute("href").includes("farhad")){
+                myLink[i].setAttribute("href", "https://google.com");
+                myLink[i].innerText += " => changed";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
